@@ -11,10 +11,9 @@ php:
 
 env:
  global:
+  - DB=mysqli
   - MOODLE_BRANCH=MOODLE_30_STABLE
 
-matrix:
-  - DB=mysqli
 
 before_install:
   - phpenv config-rm xdebug.ini
